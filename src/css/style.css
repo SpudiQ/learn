@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 110vh;
+
+    font-size: 48px;
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+    
+    transition: 5s all;
+}
+
+.show {
+    opacity: 1;
+}
