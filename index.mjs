@@ -1,0 +1,1 @@
+import observer from "./src/modules/animationOnScroll.mjs";
