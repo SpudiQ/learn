@@ -10,10 +10,35 @@
 </head>
 
 <body>
-    <img class="background" src=".\src\assets\SCZa.gif" width="100%" height="100%"
+    <img class="background" src=".\src\assets\background.gif" width="100%" height="100%"
         style="position: fixed; filter: brightness(40%); z-index: -1;">
 
-    <section class="hidden">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span> <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <a href="#start" class="logo" id="logo">learn</a>
+                    <ul class="menu" id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+    </header>
+
+    <section class="hidden" id="start">
         <p>Hi</p>
     </section>
 
@@ -26,8 +51,11 @@
     </section>
 
     <section class="hidden">
-        <p>Hi</p>
+        <p id="appreciation"></p>
     </section>
+
+
 </body>
-    <script type="module" src="index.mjs"></script>
+<script type="module" src="index.mjs"></script>
+
 </html>
