@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/calculator.css">
+    <link rel="stylesheet" href="./src/css/tictactoe.css">
     <title>Document</title>
 </head>
 
 <body>
-    <img class="background" src=".\src\assets\background.gif" width="100%" height="100%"
+    <img class="background" src=".\src\assets\img\background.gif" width="100%" height="100%"
         style="position: fixed; filter: brightness(40%); z-index: -1;">
 
-    <header>
+    <header id="info_block">
         <nav class="navbar">
             <div class="container">
                 <div class="navbar__wrap">
@@ -23,14 +25,15 @@
                             <span class="bar"></span>
                         </div>
                     </div>
-                    <a href="#start" class="logo" id="logo">learn</a>
+                    <div class="logo_container">
+                        <div class="logo_border">
+                            <a href="#info_block" class="logo" id="logo">learn</a>
+                        </div>
+                    </div>
                     <ul class="menu" id="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Prices</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#calculator">Calculator</a></li>
+                        <li><a href="#tictactoe">Tic-Tac-Toe</a></li>
+                        <li><a href="#">Third_block</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,16 +41,89 @@
         <div class="popup" id="popup"></div>
     </header>
 
-    <section class="hidden" id="start">
-        <p>Hi</p>
+    <section class="hidden">
+        <div class="container">
+            <h1>Welcome to my First Pet Project :)</h1>
+            <p>This site was made just for fun and learning some basics of Git, Javascript (such as
+                modules and different types of functions, learning the difference between them more subtle) so I can
+                step further and start learning Vue.js.
+                <br><br>
+                The easiest 1st section will be just a calculator, it won't take so much time because I did it with C#
+                around 5 years ago.
+                <br><br>
+                The medium difficulty, that's 2nd section, will probably be a game, for example, snake or Tic-Tac-Toe.
+                Like
+                a little entertainment
+                between two functionally items, everyone love games... at least, I hope...
+                <br><br>
+                The hardest 3rd section here, I want to work a little bit with databases or just some objects, another
+                useful feature but
+                I don't think that I will invent something.
+                <br><br>
+                I'm writing this text on planning stage
+                that's kind of funny because I don't know how much time it will take...
+                <br><br>
+                I guess it will look like a diary so I will leave some notes in every section.
+            </p>
+        </div>
     </section>
 
-    <section class="hidden">
-        <p>Hi</p>
+    <section class="hidden" id="calculator">
+        <div class="container">
+            <h1>Calculator</h1><br>
+            <p>That wasn't that easy because I wanted to use Classes and I did it pretty well I think, as a novice of
+                course.
+            </p><br><br>
+        </div>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two">=</button>
+        </div>
     </section>
 
-    <section class="hidden">
-        <p>Hi</p>
+    <section class="hidden" id="tictactoe">
+        <div class="container">
+            <h1>Tic-Tac-Toe</h1>
+            <p>Just a simple game that everyone played before, nothing to say about.
+                What about realisation, it was challenging when you don't know how exactly to check winning combinations
+                but google helps with that anyway. xd
+            </p>
+        </div>
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <div data-winning-message-text></div>
+            <button id="restartButton">Restart</button>
+        </div>
     </section>
 
     <section class="hidden">
