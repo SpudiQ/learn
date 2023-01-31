@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/calculator.css">
     <link rel="stylesheet" href="./src/css/tictactoe.css">
+    <link rel="stylesheet" href="./src/css/posts.css">
     <title>Document</title>
 </head>
 
 <body>
-    <img class="background" src=".\src\assets\img\background.gif" width="100%" height="100%"
+    <img class="background" src=".\assets\img\background.gif" width="100%" height="100%"
         style="position: fixed; filter: brightness(40%); z-index: -1;">
 
     <header id="info_block">
@@ -33,7 +34,7 @@
                     <ul class="menu" id="menu">
                         <li><a href="#calculator">Calculator</a></li>
                         <li><a href="#tictactoe">Tic-Tac-Toe</a></li>
-                        <li><a href="#">Third_block</a></li>
+                        <li><a href="#posts">Post_Feature</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,7 +104,7 @@
 
     <section class="hidden" id="tictactoe">
         <div class="container">
-            <h1>Tic-Tac-Toe</h1>
+            <h1>Tic-Tac-Toe</h1><br>
             <p>Just a simple game that everyone played before, nothing to say about.
                 What about realisation, it was challenging when you don't know how exactly to check winning combinations
                 but google helps with that anyway. xd
@@ -123,6 +124,33 @@
         <div class="winning-message" id="winningMessage">
             <div data-winning-message-text></div>
             <button id="restartButton">Restart</button>
+        </div>
+    </section>
+
+    <section class="hidden" id="posts">
+        <div class="container">
+            <h1>Post Feature</h1><br>
+            <p>That's a simple feature that displaying some posts and it stores data in local storage.
+                It was quite simple, probably the most easiest feature because I already knew
+                how to do it in mind.
+            </p>
+            <button class="createBtn" id="create-post-btn">Create Post</button>
+            <div id="create-post-modal" style="display:none;">
+                <h2 id="createPostArticle">Create Post</h2>
+                <div class="constructor">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="posts_input">
+                    <label for="article">Article:</label>
+                    <input type="text" id="article" class="posts_input">
+                    <label for="text">Text:</label>
+                    <textarea id="text" class="posts_input"></textarea>
+                    <div>
+                        <button class="post_buttons" id="save-post-btn">Save</button>
+                        <button class="post_buttons" id="cancel-post-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div id="posts-container"></div>
         </div>
     </section>
 
