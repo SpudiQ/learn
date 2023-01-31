@@ -2,7 +2,9 @@ import observer from "./src/modules/animationOnScroll.mjs";
 import appreciation from "./src/modules/appreciationSentences.mjs";
 import calculator from "./src/modules/calculator.js";
 import startGame from "./src/modules/tictactoe.js";
+import renderPosts from "./src/modules/posts.js";
 
+// header - hamburger
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
@@ -34,6 +36,3 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
-
-
-// 

@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Poppins-Regular';
-    src: url('../assets/fonts/Poppins-ExtraLight.ttf');
+    src: url('/assets/fonts/Poppins-ExtraLight.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,6 +50,11 @@ header {
     margin: 0 auto;
     height: 100%;
     padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .navbar {
@@ -154,7 +163,7 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--main-color);
         z-index: 100;
         display: flex;
         transition: 0.3s;
@@ -208,4 +217,18 @@ header {
     body.noscroll {
         overflow: hidden;
     }
+}
+
+
+/* posts */
+
+#post-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#post-container div {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
 }

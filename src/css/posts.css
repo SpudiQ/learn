@@ -1,0 +1,91 @@
+:root {
+    --main-color: #7a52b3;
+}
+
+
+.post {
+    width: 500px;
+
+    border: 2px solid var(--main-color);
+
+    position: relative;
+
+    margin: 10px;
+}
+
+.createBtn {
+    width: 250px;
+    height: 75px;
+
+    background-color: #5d0ccf;
+    color: white;
+
+    font-size: 36px;
+    font-family: Poppins-Regular;
+    cursor: pointer;
+
+    transition: .3s ease-in-out;
+}
+
+.posts_input {
+    height: 50px;
+
+    font-size: 28px;
+
+    background-color: black;
+    color: white;
+    caret-color: var(--main-color);
+
+    resize: vertical;
+}
+
+.post_buttons {
+    width: 125px;
+    height: 37.5px;
+
+    background-color: #5d0ccf;
+    color: white;
+
+    font-size: 24px;
+    font-family: Poppins-Regular;
+    cursor: pointer;
+
+    margin: 5px 5px;
+
+    transition: .3s ease-in-out;
+}
+
+.post_buttons:hover,
+.createBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.constructor {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-size: 16px;
+
+    opacity: 0.5;
+}
+
+.post h3 {
+    font-size: 28px;
+    margin: 10px 5px;
+    text-align: left;
+}
+
+.post_text {
+    font-size: 24px;
+    margin: 25px;
+}
+
+@media (max-width: 1000px) {
+    .post {
+        width: 95%;
+        margin: 5% 3% 5% 2%;
+    }
+}
